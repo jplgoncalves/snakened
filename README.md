@@ -1,5 +1,11 @@
-# snakened
-# 🐍 Snakened (S)
+
+<img width="1408" height="768" alt="logo_snakened" src="https://github.com/user-attachments/assets/11590125-8629-4dd8-957b-cb6e6c7794da" />
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/11590125-8629-4dd8-957b-cb6e6c7794da" width="400">
+</p>
+
+# 🐍 Snakened
 
 **A linguagem que une a simplicidade de Python com a performance de C.**
 
@@ -15,9 +21,3 @@ Snakened é uma "Linguagem em S" desenhada para ser intuitiva, mas com uma execu
 func principal() {
     escrever("Olá mundo da Snakened!")
 }
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/jplgoncalves/snakened/main/pasta-onde-voce-salvou/seu-logo.png" width="300">
-</p>
-
-# Snakened Programming Language
