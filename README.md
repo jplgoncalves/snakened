@@ -15,3 +15,9 @@ Snakened é uma "Linguagem em S" desenhada para ser intuitiva, mas com uma execu
 func principal() {
     escrever("Olá mundo da Snakened!")
 }
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/jplgoncalves/snakened/main/pasta-onde-voce-salvou/seu-logo.png" width="300">
+</p>
+
+# Snakened Programming Language
