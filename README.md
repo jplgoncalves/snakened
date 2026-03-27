@@ -1,7 +1,7 @@
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/11590125-8629-4dd8-957b-cb6e6c7794da" width="500">
-</p>
+ <img width="1408" height="768" alt="logo_snakened (2)" src="https://github.com/user-attachments/assets/cb199465-bf12-4fa2-bb31-e900f873f089" /></p>
+
 
 # 🐍 Snakened
 
