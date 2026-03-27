@@ -1,8 +1,6 @@
 
-<img width="1408" height="768" alt="logo_snakened" src="https://github.com/user-attachments/assets/11590125-8629-4dd8-957b-cb6e6c7794da" />
-
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/11590125-8629-4dd8-957b-cb6e6c7794da" width="400">
+  <img src="https://github.com/user-attachments/assets/11590125-8629-4dd8-957b-cb6e6c7794da" width="500">
 </p>
 
 # 🐍 Snakened
