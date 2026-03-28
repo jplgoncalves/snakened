@@ -70,43 +70,36 @@
     </footer>
 <script>
   document.addEventListener('DOMContentLoaded', () => {
-    // 1. Localiza a área onde os botões estão (geralmente no header ou hero)
-    // Vamos procurar o botão "Começar Agora" para inserir o "Executar" ao lado dele
-    const botoes = document.querySelectorAll('button, a');
-    
-    botoes.forEach(btn => {
-      if (btn.textContent.trim() === 'Começar Agora' && !document.getElementById('btn-executar')) {
-        // Criar o novo botão "Executar" profissional
-        const btnExecutar = document.createElement('button');
-        btnExecutar.id = 'btn-executar';
-        btnExecutar.textContent = 'Executar';
-        
-        // Copiar as classes de estilo do botão original para ficarem iguais
-        btnExecutar.className = btn.className;
-        btnExecutar.style.marginLeft = '10px'; // Espaço entre os botões
-        btnExecutar.style.cursor = 'pointer';
-        btnExecutar.style.backgroundColor = '#22c55e'; // Um verde "Play" profissional
+    // 1. Configuração do Botão "Executar" (Terminal Cloud)
+    const btnExecutar = document.getElementById('btn-executar');
+    if (btnExecutar) {
+      btnExecutar.style.cursor = 'pointer';
+      btnExecutar.onclick = (e) => {
+        e.preventDefault();
+        // Link profissional para o Cloud Shell
+        window.open("https://shell.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https://github.com/jplgoncalves/snakened", '_blank');
+      };
+    }
 
-        // Ação do botão: Abrir Terminal Cloud
-        btnExecutar.onclick = (e) => {
-          e.preventDefault();
-          const urlTerminal = "https://shell.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https://github.com/jplgoncalves/snakened";
-          window.open(urlTerminal, '_blank');
-        };
+    // 2. Configuração do Botão "Documentação" (README)
+    const btnDoc = document.getElementById('btn-documentacao');
+    if (btnDoc) {
+      btnDoc.style.cursor = 'pointer';
+      btnDoc.onclick = (e) => {
+        e.preventDefault();
+        window.open('https://github.com/jplgoncalves/snakened#readme', '_blank');
+      };
+    }
 
-        // Insere o novo botão logo após o "Começar Agora"
-        btn.parentNode.insertBefore(btnExecutar, btn.nextSibling);
-      }
-
-      // Ajuste dos botões existentes
-      const texto = btn.textContent.trim();
-      if (texto === 'Começar Agora') {
-        btn.onclick = (e) => { e.preventDefault(); window.location.href = 'https://github.com/jplgoncalves/snakened'; };
-      }
-      if (texto === 'Documentação') {
-        btn.onclick = (e) => { e.preventDefault(); window.open('https://github.com/jplgoncalves/snakened#readme', '_blank'); };
-      }
-    });
+    // 3. Configuração do Botão "Começar Agora" (Vai para o Código)
+    const btnComecar = document.getElementById('btn-comecar');
+    if (btnComecar) {
+      btnComecar.style.cursor = 'pointer';
+      btnComecar.onclick = (e) => {
+        e.preventDefault();
+        window.location.href = 'https://github.com/jplgoncalves/snakened';
+      };
+    }
   });
 </script>
 </body>
