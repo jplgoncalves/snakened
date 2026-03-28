@@ -71,29 +71,29 @@
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     // Seleciona todos os botões e links da página
-    const todosOsBotoes = document.querySelectorAll('button, a');
+    const elementos = document.querySelectorAll('button, a');
 
-    todosOsBotoes.forEach(botao => {
-      const texto = botao.textContent.trim();
+    elementos.forEach(el => {
+      const texto = el.textContent.trim();
 
-      // 1. CORREÇÃO DO BOTÃO "COMEÇAR AGORA"
+      // 1. CORREÇÃO: BOTÃO "COMEÇAR AGORA" -> LEVA AO CÓDIGO (main.py)
       if (texto.includes('Começar Agora')) {
-        botao.style.cursor = 'pointer'; // Garante que o rato muda de ícone
-        botao.addEventListener('click', (e) => {
+        el.style.cursor = 'pointer';
+        el.onclick = (e) => {
           e.preventDefault();
-          // Redireciona para o repositório principal onde está o jogo
-          window.location.href = 'https://github.com/jplgoncalves/snakened';
-        });
+          // Abre o ficheiro main.py do seu projeto Snakened
+          window.location.href = 'https://github.com/jplgoncalves/snakened/blob/main/main.py';
+        };
       }
 
-      // 2. CORREÇÃO DO BOTÃO "DOCUMENTAÇÃO"
+      // 2. CORREÇÃO: BOTÃO "DOCUMENTAÇÃO" -> LEVA AO README
       if (texto.includes('Documentação')) {
-        botao.style.cursor = 'pointer';
-        botao.addEventListener('click', (e) => {
+        el.style.cursor = 'pointer';
+        el.onclick = (e) => {
           e.preventDefault();
-          // Abre o README/Documentação numa nova aba
+          // Abre a documentação numa nova aba
           window.open('https://github.com/jplgoncalves/snakened#readme', '_blank');
-        });
+        };
       }
     });
   });
