@@ -96,5 +96,37 @@
         });
       });
     </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        // 1. Selecionar todos os links e botões
+        const botoes = document.querySelectorAll('a, button');
+
+        botoes.forEach(botao => {
+          const texto = botao.textContent.trim();
+
+          // CORREÇÃO: BOTÃO COMEÇAR AGORA
+          if (texto.includes('Começar Agora')) {
+            botao.addEventListener('click', (e) => {
+              e.preventDefault();
+              // Opção 1: Levar para a secção de código (se existir id="codigo")
+              // Opção 2: Abrir o repositório (ajustado abaixo para o seu repo)
+              window.location.href = 'https://github.com/jplgoncalves/snakened';
+              console.log('Redirecionando para o projeto Snakened...');
+            });
+            // Adicionar estilo de cursor para o utilizador saber que é clicável
+            botao.style.cursor = 'pointer';
+          }
+
+          // CORREÇÃO: BOTÃO DOCUMENTAÇÃO
+          if (texto.includes('Documentação')) {
+            botao.addEventListener('click', (e) => {
+              e.preventDefault();
+              window.open('https://github.com/jplgoncalves/snakened#readme', '_blank');
+            });
+            botao.style.cursor = 'pointer';
+          }
+        });
+      });
+    </script>
 </body>
 </html>
