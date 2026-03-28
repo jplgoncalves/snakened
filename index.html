@@ -68,6 +68,33 @@
     <footer class="py-10 text-center text-slate-500 border-t border-slate-800">
         <p>&copy; 2026 Snakened Language. Criado por jplgoncalves.</p>
     </footer>
-
+<script>
+      document.addEventListener('DOMContentLoaded', () => {
+        // Seleciona todos os links e botões da página
+        const elementos = document.querySelectorAll('a, button');
+        
+        elementos.forEach(el => {
+          const texto = el.textContent.trim();
+          
+          // Ação para o botão Começar Agora
+          if (texto === 'Começar Agora') {
+            el.addEventListener('click', (e) => {
+              e.preventDefault();
+              // Se quiser que desça para uma seção específica, mude o # para o ID da seção
+              window.location.href = '#'; 
+              console.log('Botão Começar clicado');
+            });
+          }
+          
+          // Ação para o botão Documentação
+          if (texto === 'Documentação') {
+            el.addEventListener('click', (e) => {
+              e.preventDefault();
+              window.open('https://github.com/jplgoncalves/snakened#readme', '_blank');
+            });
+          }
+        });
+      });
+    </script>
 </body>
 </html>
