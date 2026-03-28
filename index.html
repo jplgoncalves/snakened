@@ -70,28 +70,26 @@
     </footer>
 <script>
   document.addEventListener('DOMContentLoaded', () => {
-    // Seleciona todos os botões e links da página
-    const elementos = document.querySelectorAll('button, a');
+    const botoes = document.querySelectorAll('button, a');
 
-    elementos.forEach(el => {
-      const texto = el.textContent.trim();
+    botoes.forEach(btn => {
+      const texto = btn.textContent.trim();
 
-      // 1. CORREÇÃO: BOTÃO "COMEÇAR AGORA" -> LEVA AO CÓDIGO (main.py)
+      // 1. BOTÃO "COMEÇAR AGORA" -> ABRE O TERMINAL/EDITOR NO GITHUB
       if (texto.includes('Começar Agora')) {
-        el.style.cursor = 'pointer';
-        el.onclick = (e) => {
+        btn.style.cursor = 'pointer';
+        btn.onclick = (e) => {
           e.preventDefault();
-          // Abre o ficheiro main.py do seu projeto Snakened
-          window.location.href = 'https://github.com/jplgoncalves/snakened/blob/main/main.py';
+          // Este link abre o editor web do GitHub com terminal para o seu repo
+          window.location.href = 'https://github.dev/jplgoncalves/snakened';
         };
       }
 
-      // 2. CORREÇÃO: BOTÃO "DOCUMENTAÇÃO" -> LEVA AO README
+      // 2. BOTÃO "DOCUMENTAÇÃO" -> ABRE O README
       if (texto.includes('Documentação')) {
-        el.style.cursor = 'pointer';
-        el.onclick = (e) => {
+        btn.style.cursor = 'pointer';
+        btn.onclick = (e) => {
           e.preventDefault();
-          // Abre a documentação numa nova aba
           window.open('https://github.com/jplgoncalves/snakened#readme', '_blank');
         };
       }
