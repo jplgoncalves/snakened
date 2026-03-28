@@ -66,67 +66,37 @@
     </main>
 
     <footer class="py-10 text-center text-slate-500 border-t border-slate-800">
-        <p>&copy; 2026 Snakened Language. Criado por jplgoncalves.</p>
+        <p>&copy; 2026 Snakened Language. Criado por João Gonçalves.</p>
     </footer>
 <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        // Seleciona todos os links e botões da página
-        const elementos = document.querySelectorAll('a, button');
-        
-        elementos.forEach(el => {
-          const texto = el.textContent.trim();
-          
-          // Ação para o botão Começar Agora
-          if (texto === 'Começar Agora') {
-            el.addEventListener('click', (e) => {
-              e.preventDefault();
-              // Se quiser que desça para uma seção específica, mude o # para o ID da seção
-              window.location.href = '#'; 
-              console.log('Botão Começar clicado');
-            });
-          }
-          
-          // Ação para o botão Documentação
-          if (texto === 'Documentação') {
-            el.addEventListener('click', (e) => {
-              e.preventDefault();
-              window.open('https://github.com/jplgoncalves/snakened#readme', '_blank');
-            });
-          }
+  document.addEventListener('DOMContentLoaded', () => {
+    // Seleciona todos os botões e links da página
+    const todosOsBotoes = document.querySelectorAll('button, a');
+
+    todosOsBotoes.forEach(botao => {
+      const texto = botao.textContent.trim();
+
+      // 1. CORREÇÃO DO BOTÃO "COMEÇAR AGORA"
+      if (texto.includes('Começar Agora')) {
+        botao.style.cursor = 'pointer'; // Garante que o rato muda de ícone
+        botao.addEventListener('click', (e) => {
+          e.preventDefault();
+          // Redireciona para o repositório principal onde está o jogo
+          window.location.href = 'https://github.com/jplgoncalves/snakened';
         });
-      });
-    </script>
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        // 1. Selecionar todos os links e botões
-        const botoes = document.querySelectorAll('a, button');
+      }
 
-        botoes.forEach(botao => {
-          const texto = botao.textContent.trim();
-
-          // CORREÇÃO: BOTÃO COMEÇAR AGORA
-          if (texto.includes('Começar Agora')) {
-            botao.addEventListener('click', (e) => {
-              e.preventDefault();
-              // Opção 1: Levar para a secção de código (se existir id="codigo")
-              // Opção 2: Abrir o repositório (ajustado abaixo para o seu repo)
-              window.location.href = 'https://github.com/jplgoncalves/snakened';
-              console.log('Redirecionando para o projeto Snakened...');
-            });
-            // Adicionar estilo de cursor para o utilizador saber que é clicável
-            botao.style.cursor = 'pointer';
-          }
-
-          // CORREÇÃO: BOTÃO DOCUMENTAÇÃO
-          if (texto.includes('Documentação')) {
-            botao.addEventListener('click', (e) => {
-              e.preventDefault();
-              window.open('https://github.com/jplgoncalves/snakened#readme', '_blank');
-            });
-            botao.style.cursor = 'pointer';
-          }
+      // 2. CORREÇÃO DO BOTÃO "DOCUMENTAÇÃO"
+      if (texto.includes('Documentação')) {
+        botao.style.cursor = 'pointer';
+        botao.addEventListener('click', (e) => {
+          e.preventDefault();
+          // Abre o README/Documentação numa nova aba
+          window.open('https://github.com/jplgoncalves/snakened#readme', '_blank');
         });
-      });
-    </script>
+      }
+    });
+  });
+</script>
 </body>
 </html>
