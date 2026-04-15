@@ -30,6 +30,22 @@ func principal() {
     escrever("Olá mundo da Snakened!")
 }
 
+---
+
+## 🚀 Features
+
+* **Localized Syntax:** Use Portuguese keywords like `func`, `escrever`, and `se`, making it accessible and unique.
+* **Static Typing:** Define variables with clear types (e.g., `int`), ensuring better code structure.
+* **Easy to Run:** Built with Python, allowing you to run your scripts anywhere without complex setups.
+* **C-Style Structure:** Familiar curly braces `{}` and logic for those coming from C, Java, or JavaScript.
+
+---
+
+## 🛠️ How to run
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/jplgoncalves/snakened.git](https://github.com/jplgoncalves/snakened.git)
 func calcular_fibonacci(n: int) -> int {
     if (n <= 1) {
         return n
