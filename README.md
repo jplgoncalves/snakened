@@ -20,7 +20,7 @@ Snakened é uma "Linguagem em S" desenhada para ser intuitiva, mas com uma execu
 
 * 🚀 **Performance Nativa:** Compilação otimizada que rivaliza com linguagens de baixo nível.
 * 🧠 **Sintaxe Limpa:** Estilo Python para máxima produtividade.
-* 🛡️ **Extensão de Ficheiro:** `.s`
+* 🛡️ **Extensão de Ficheiro:** `.snk`
 * 🔧 **Focada em Sistemas:** Ideal para quem precisa de controle e velocidade.
 
 ## 💻 Exemplo de Código (.snk)
