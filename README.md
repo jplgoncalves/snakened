@@ -23,7 +23,7 @@ Snakened é uma "Linguagem em S" desenhada para ser intuitiva, mas com uma execu
 * 🛡️ **Extensão de Ficheiro:** `.s`
 * 🔧 **Focada em Sistemas:** Ideal para quem precisa de controle e velocidade.
 
-## 💻 Exemplo de Código (.s)
+## 💻 Exemplo de Código (.snk)
 
 ```s
 func principal() {
