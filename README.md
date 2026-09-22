@@ -12,7 +12,7 @@
 
 Snakened é uma "Linguagem em S" desenhada para ser intuitiva, mas com uma execução ultra-rápida através de compilação nativa. Ela combina o melhor dos dois mundos: a legibilidade que os desenvolvedores amam com a velocidade bruta que os sistemas de próxima geração exigem.
 
-[🌐 Visite o Site Oficial](https://jplgoncalves.github.io/snakened)
+[🌐 Visite o Site Oficial](https://snakened-lang.github.io/)
 
 ---
 
